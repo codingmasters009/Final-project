@@ -7,10 +7,10 @@ const getUser = async(req,res)=>{
 
 
 const newUser= async(req,res)=>{
-    const {name,gender,age,email,password}=req.body;
+    const {name,gender,age,email,address}=req.body;
     try{
         const user =await User.create({
-            name,sex,gender,email,password,
+            name,gender,age,email,address,
         });
         res.status(200).json(user);
     }

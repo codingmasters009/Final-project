@@ -3,6 +3,7 @@ const mongoose = require("mongoose")
 const admin=require("./routers/admin")
 const user=require("./routers/user")
 const booking=require("./routers/booking")
+const register=require("./routers/regester")
 
 require("dotenv").config();
 const app=express();
@@ -16,6 +17,7 @@ app.use((req, res,next)=>{
 app.use("/api/admin",admin);
 app.use("/api/user",user);
 app.use("/api/booking",booking);
+app.use("/api/reg",register)
 
 mongoose
 .connect(process.env.MONGO_URI)
