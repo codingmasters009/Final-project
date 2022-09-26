@@ -5,6 +5,7 @@ import UserManu from './User/UserManu'
 import Tourdetail from './User/Tourdetail'
 import About from './User/About'
 import Home from './User/Home'
+import Register from './User/Register'
 
 function Link() {
   return (
@@ -12,9 +13,9 @@ function Link() {
       <BrowserRouter>
         <UserManu />
         <Routes>
-        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/register" element={<Register/>}/>
           <Route exact path="/tourdetail" element={<Tourdetail/>}/>
-          <Route />
+          <Route exact path="/" element={<Home/>}/>
         </Routes>
       </BrowserRouter>
     </>

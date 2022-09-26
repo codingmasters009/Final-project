@@ -19,6 +19,9 @@ function UserManu() {
 
       </Grid>
       <Grid item xs={2} container justifyContent="flex-end">
+      <a href='/register'>
+      <Button variant="text" color='success'>Register</Button>
+      </a>
         <Button variant="text" color='warning'>logout</Button>
       </Grid>
     </Grid>
