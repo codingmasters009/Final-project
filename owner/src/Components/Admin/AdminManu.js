@@ -28,6 +28,7 @@ function AdminManu() {
             <Button variant="text" color='success'>Bookings</Button>
             
         </Grid>
+        
         <Grid item xs={2}  container justifyContent="flex-end">
             <Button variant="text" color='warning'>logout</Button>
         </Grid>
